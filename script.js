@@ -54,11 +54,11 @@ function openDialog(i) {
         </section>
          <footer class="dialog_style">
          <div class ="button_style">
-        <img onclick="leftButton()"src="./assets/icon/Arrow-left(1).svg" alt="">
+        <img class="arrow" onclick="leftButton()"src="./assets/icon/Arrow-left(1).svg" alt="">
         </div>
         <p id="imgsCounter">${currentImg + 1}/${myImgs.length}</p>
         <div class ="button_style">
-         <img onclick="rightButton()"src="./assets/icon/Arrow-Right.svg" alt="">
+         <img class="arrow" onclick="rightButton()"src="./assets/icon/Arrow-Right.svg" alt="">
          </div>
          </footer>`
 

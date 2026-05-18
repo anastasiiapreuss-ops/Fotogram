@@ -1,0 +1,93 @@
+@media screen and (max-width: 30rem) {
+    #fotogram {
+        padding: 0rem;
+    }
+    .header_style{
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .mobile-break {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 3.13rem 1.25rem 3.13rem 1.25rem;
+        text-align: center;
+    }
+
+    .section_dialog {
+        height: 60%;
+    }
+
+    .header_dialog {
+        width: 100%;
+        padding-inline: 0.63rem;
+    }
+
+    #dialog {
+        border-radius: 1rem;
+        height: 25rem;
+    }
+
+    .header_dialog {
+        font-size: 1rem;
+    }
+
+    .x_button {
+        width: 1.88rem;
+        height: 1.88rem;
+    }
+
+    .x_button:hover {
+        width: 1.88rem;
+        height: 1.88rem;
+    }
+
+    .button_style {
+        width: 1.88rem;
+        height: 1.88rem;
+    }
+
+    .button_style:hover {
+        width: 1.88rem;
+        height: 1.88rem;
+    }
+
+    .arrow {
+        width: 0.94rem;
+    }
+
+    #imgsCounter {
+        font-size: 0.75rem;
+    }
+
+    .footer_style {
+        border-radius: 35% 35% 0% 0%;
+    }
+
+    .da_style {
+        font-size: 1.13rem;
+    }
+}
+
+@media screen and (min-width: 30.06rem) and (max-width: 47.94rem) {
+    #fotogram {
+        padding: 3.13rem;
+    }
+
+    h1 {
+        padding: 3.13rem;
+        font-size: 2.63rem;
+        text-align: center;
+    }
+
+    .footer_style {
+        border-radius: 35% 35% 0% 0%;
+    }
+
+    .da_style {
+        font-size: 1.13rem;
+    }
+}

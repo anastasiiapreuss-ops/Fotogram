@@ -1,0 +1,17 @@
+@media screen and (min-width: 90rem) {
+    #fotogram {
+        padding: 7.5rem max(7.5rem, calc(50% - 45rem));
+    }
+
+    .header_style {
+        padding: 2.88rem max(7.5rem, calc(50% - 45rem));
+    }
+
+    h1 {
+        padding: 7.5rem max(7.5rem, calc(50% - 45rem));
+    }
+
+    .footer_style {
+        padding: 2.5rem max(7.5rem, calc(50% - 45rem));
+    }
+}
