@@ -47,19 +47,19 @@ function openDialog(i) {
     dialogRef.innerHTML =
         `
        <header>
-            <h3 class="header_dialog" >${myAlts[i]}<img onclick="closeDialog()" class="x_button" src="./assets/icon/Property 1=Default.svg" alt=""></h3>
+            <h2 class="header_dialog" >${myAlts[i]}<img onclick="closeDialog()" class="x_button" src="./assets/icon/Property 1=Default.svg" alt=""></h2>
             </header>
          <section class ="section_dialog">
           <img class="dialog_img" src="./assets/img/${myImgs[i]}" alt="${myAlts[i]}">
         </section>
          <footer class="dialog_style">
-         <div class ="button_style">
+         <button aria-label ="gehe zum nächsten Bild" class ="button_style">
         <img class="arrow" onclick="leftButton()"src="./assets/icon/Arrow-left(1).svg" alt="">
-        </div>
+        </button>
         <p id="imgsCounter">${currentImg + 1}/${myImgs.length}</p>
-        <div class ="button_style">
+        <button aria-label ="gehe zum nächsten Bild" class ="button_style">
          <img class="arrow" onclick="rightButton()"src="./assets/icon/Arrow-Right.svg" alt="">
-         </div>
+         </button>
          </footer>`
 
     dialogRef.showModal();
