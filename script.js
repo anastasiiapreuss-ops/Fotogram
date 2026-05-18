@@ -54,11 +54,11 @@ function openDialog(i) {
         </section>
          <footer class="dialog_style">
          <button aria-label ="gehe zum nächsten Bild" class ="button_style">
-        <img class="arrow" onclick="leftButton()"src="./assets/icon/Arrow-left(1).svg" alt="">
+        <img class="arrow" onclick="leftButton()"src="./assets/icon/Arrow-left(1).svg" alt="Pfeil nach links">
         </button>
         <p id="imgsCounter">${currentImg + 1}/${myImgs.length}</p>
         <button aria-label ="gehe zum nächsten Bild" class ="button_style">
-         <img class="arrow" onclick="rightButton()"src="./assets/icon/Arrow-Right.svg" alt="">
+         <img class="arrow" onclick="rightButton()"src="./assets/icon/Arrow-Right.svg" alt="Pfeil nach rechts">
          </button>
          </footer>`
 
