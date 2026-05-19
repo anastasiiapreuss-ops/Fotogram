@@ -32,20 +32,27 @@ let currentImg;
 function renderFotogram() {
 
     for (let i = 0; i < myImgs.length; i++) {
-        console.log(i);
-        document.getElementById('fotogram').innerHTML +=
-
-            `<div class="pic">
-            <img src="./assets/img/${myImgs[i]}" alt="${myAlts[i]}" class="pic"; onclick ="openDialog (${i})">
-        </div>`;
+        document.getElementById('fotogram').innerHTML += getPicTemplate(i)
     }
 }
 
-
 function openDialog(i) {
     currentImg = i;
-    dialogRef.innerHTML =
-        `
+    dialogRef.innerHTML = getDialogTemplate(i);
+    dialogRef.showModal();
+
+
+}
+
+
+function getPicTemplate(i) {
+    return `<div class="pic">
+            <img src="./assets/img/${myImgs[i]}" alt="${myAlts[i]}" class="pic"; onclick ="openDialog (${i})">
+        </div>`;
+}
+
+function getDialogTemplate(i) {
+    return `
        <header>
             <h2 class="header_dialog" >${myAlts[i]}<img onclick="closeDialog()" class="x_button" src="./assets/icon/Property 1=Default.svg" alt=""></h2>
             </header>
@@ -53,17 +60,14 @@ function openDialog(i) {
           <img class="dialog_img" src="./assets/img/${myImgs[i]}" alt="${myAlts[i]}">
         </section>
          <footer class="dialog_style">
-         <button aria-label ="gehe zum nächsten Bild" class ="button_style">
-        <img class="arrow" onclick="leftButton()"src="./assets/icon/Arrow-left(1).svg" alt="Pfeil nach links">
+         <button aria-label ="gehe zum nächsten Bild" onclick="leftButton()" class ="button_style">
+        <img class="arrow" src="./assets/icon/Arrow-left(1).svg" alt="Pfeil nach links">
         </button>
         <p id="imgsCounter">${currentImg + 1}/${myImgs.length}</p>
-        <button aria-label ="gehe zum nächsten Bild" class ="button_style">
-         <img class="arrow" onclick="rightButton()"src="./assets/icon/Arrow-Right.svg" alt="Pfeil nach rechts">
+        <button aria-label ="gehe zum nächsten Bild" onclick="rightButton()" class ="button_style">
+         <img class="arrow" src="./assets/icon/Arrow-Right.svg" alt="Pfeil nach rechts">
          </button>
          </footer>`
-
-    dialogRef.showModal();
-
 }
 
 function closeDialog() {
